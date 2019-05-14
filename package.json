@@ -1,0 +1,36 @@
+{
+    "name": "swaggereditor-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "swaggereditor-cli": "swaggereditor.js"
+    },
+    "dependencies": {
+        "commander": "^2.20.0",
+        "swagger-editor-dist": "^3.6.28"
+    },
+    "devDependencies": {
+        "husky": "^2.2.0",
+        "prettier": "1.17.1",
+        "pretty-quick": "^1.10.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/olivierlsc/swaggereditor-cli.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/olivierlsc/swaggereditor-cli/issues"
+    },
+    "homepage": "https://github.com/olivierlsc/swaggereditor-cli#readme",
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
+    }
+}
